@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Silkscreen:wght@400;700&display=swap'); 
+
+*{
+    font-family: "Silkscreen", "sans-serif";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F7D2CC;
+}
+
+.container{
+    width: 25%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(209, 160, 198);
+    box-shadow: 0 50px 50px rgb(132, 103, 103);
+    border-radius: 50px;
+}
+
+.taskInput{
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 0;
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #f9eded;
+}
+
+#addButton{
+    border-radius: 50px;
+    background-color: #F7D2CC;
+    color: rgb(144, 60, 124);
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+}
+
+#addButton:hover{
+    background-color: #9c4c8c;
+    color: #f9eded;
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+}
+
+li{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+.remove {
+    border: 0;
+    display: flex;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: rgb(122, 21, 156);
+}
+
+#clearAlltask{
+    border-radius: 50px;
+    background-color: #F7D2CC;
+    color: rgb(144, 60, 124);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
